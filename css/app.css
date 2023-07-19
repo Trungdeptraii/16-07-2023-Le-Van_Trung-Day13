@@ -227,16 +227,16 @@ a[class=nav-item]:hover {
   background-repeat: no-repeat;
 }
 .main .grid-item-column:first-child .item:nth-child(1) {
-  background-image: url("/imgs/pig-1.jpg");
+  background-image: url("../imgs/pig-1.jpg");
 }
 .main .grid-item-column:first-child .item:nth-child(2) {
-  background-image: url("/imgs/pic-2.jpg");
+  background-image: url("../imgs/pic-2.jpg");
 }
 .main .grid-item-column:last-child .item:nth-child(1) {
-  background-image: url("/imgs/pic-3.jpg");
+  background-image: url("../imgs/pic-3.jpg");
 }
 .main .grid-item-column:last-child .item:nth-child(2) {
-  background-image: url("/imgs/pic-4.jpg");
+  background-image: url("../imgs/pic-4.jpg");
 }
 .main .grid-item-row {
   display: flex;
@@ -255,10 +255,10 @@ a[class=nav-item]:hover {
   background-repeat: no-repeat;
 }
 .main .grid-item-row .item:nth-child(1) {
-  background-image: url("/imgs/pic-5.jpg");
+  background-image: url("../imgs/pic-5.jpg");
 }
 .main .grid-item-row .item:nth-child(2) {
-  background-image: url("/imgs/pic-6.jpg");
+  background-image: url("../imgs/pic-6.jpg");
 }
 
 @media (min-width: 576px) {

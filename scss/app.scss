@@ -143,20 +143,20 @@ a[class=nav-item]{
         }
         &:first-child .item{
             &:nth-child(1){
-                background-image: url('/imgs/pig-1.jpg');
+                background-image: url('../imgs/pig-1.jpg');
                 
             }
             &:nth-child(2){
-                background-image: url('/imgs/pic-2.jpg');
+                background-image: url('../imgs/pic-2.jpg');
             }
         }
         &:last-child .item{
             &:nth-child(1){
-                background-image: url('/imgs/pic-3.jpg');
+                background-image: url('../imgs/pic-3.jpg');
                 
             }
             &:nth-child(2){
-                background-image: url('/imgs/pic-4.jpg');
+                background-image: url('../imgs/pic-4.jpg');
             }
         }
     }
@@ -167,11 +167,11 @@ a[class=nav-item]{
             background-size: cover;
             background-repeat: no-repeat;  
                 &:nth-child(1){
-                    background-image: url('/imgs/pic-5.jpg');
+                    background-image: url('../imgs/pic-5.jpg');
                     
                 }
                 &:nth-child(2){
-                    background-image: url('/imgs/pic-6.jpg');
+                    background-image: url('../imgs/pic-6.jpg');
                 }
         }
     }
