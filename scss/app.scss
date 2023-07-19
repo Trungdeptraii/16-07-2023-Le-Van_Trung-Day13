@@ -246,7 +246,7 @@ a[class=nav-item]{
     .main{
         @include gidContainer(2, 22px);
         margin: 0 auto;
-        width: 80%;
+        width: 100%;
         .grid-item-row{
             flex-direction: row;
             row-gap: 0;
