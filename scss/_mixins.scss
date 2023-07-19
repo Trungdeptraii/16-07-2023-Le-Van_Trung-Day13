@@ -1,0 +1,61 @@
+@mixin gidFlex($colum, $spacing, $direction){
+    display: flex;
+    flex-wrap: wrap;
+    // width: calc(100% / 2 - $spacing / 2);
+    // height: 300px;
+    flex-direction: $direction;
+    @if $direction == 'column' {
+        gap: $spacing 0;
+    }
+    @if $direction == 'row' {
+        gap: 0 $spacing;
+    }
+    > *{
+        @if $direction == 'column' {
+            width: 100%;
+            height: calc(100% / 2 - $spacing / 2);
+        }
+        @if $direction == 'row' {
+            height: 100%;
+            width: calc(100% / 2 - $spacing / 2)
+        }
+        background-color: burlywood;
+    }
+}
+@mixin displayFlex($direction: row, $wap: wrap, $align: initial, $justify: initial){
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-wrap: $wap;
+    flex-direction: $direction;
+}
+@mixin gidContainer($column, $spacing){
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing;
+    // margin-left: $spacing * -1;
+    > *{
+        width: calc(100% / $column - $spacing / 2);
+        height: 300px;
+        // background-color: aquamarine;
+
+    }
+
+}
+@mixin screen($break-point){
+    @if $break-point == mobile {
+        @media (min-width: 576px) {
+            @content
+        }
+    }
+    @if $break-point == tablet {
+        @media (min-width: 768px) {
+            @content
+        }
+    }
+    @if $break-point == pc {
+        @media (min-width: 1200px) {
+            @content
+        }
+    }
+}
